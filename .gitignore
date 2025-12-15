@@ -32,7 +32,7 @@ dist-ssr
 .env.*.local
 
 # Questões do projeto de doutorado
-./public/ARQUIVO.json
+public/ARQUIVO.json
 
 # Guia de Instalação e Desenvolvimento
 README-INSTALACAO.md
