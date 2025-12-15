@@ -1,0 +1,54 @@
+.dashboard-card {
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.075);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* height: 100%;  REMOVIDO */
+}
+
+.dashboard-card > .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* height: 100%; REMOVIDO */
+  padding: 0;
+}
+
+.dashboard-card .card-title {
+  min-height: 3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.dashboard-card .display-6 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 2.5rem;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+/* cores mantidas */
+.dashboard-card.card-total-questions {
+  background-color: #dcfce7;
+  color: #1aa34a;
+}
+
+.dashboard-card.card-multiple-choice {
+  background-color: #dbeafe;
+  color: #3869eb;
+}
+
+.dashboard-card.card-discursive {
+  background-color: #f9ecca;
+  color: #ffbb00;
+}
+
+.dashboard-card.card-total-exams {
+  background-color: #f3e8ff;
+  color: #9b51e0;
+}

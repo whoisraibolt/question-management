@@ -1,0 +1,12 @@
+.app-main {
+  padding: 1rem;
+  width: calc(100% - 228px);
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  margin-right: 35px;
+}
+
+.app-container {
+  display: flex;
+}

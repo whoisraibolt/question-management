@@ -1,0 +1,13 @@
+.login-wrapper {
+  background: #f8f9fa; /* cor clara de fundo */
+}
+
+.login-form-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-title {
+  font-weight: 600;
+  color: #343a40;
+}

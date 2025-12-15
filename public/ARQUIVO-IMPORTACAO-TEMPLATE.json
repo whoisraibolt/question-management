@@ -1,0 +1,60 @@
+[
+  {
+    "statement": "Qual é a capital do Brasil?",
+    "category": "Múltipla escolha",
+    "alternatives": [
+      "São Paulo",
+      "Brasília",
+      "Rio de Janeiro",
+      "Salvador",
+      "Belo Horizonte"
+    ],
+    "correct_alternative": 1,
+    "answer_comment": "Brasília é a capital federal do Brasil.",
+    "item_model": "001 - RESPOSTA UNICA"
+  },
+  {
+    "statement": "Qual das alternativas abaixo representa um planeta do sistema solar?",
+    "category": "Múltipla escolha",
+    "alternatives": [
+      "Sol",
+      "Lua",
+      "Marte",
+      "Estrela Polar",
+      "Cometa Halley"
+    ],
+    "correct_alternative": 2,
+    "answer_comment": "Marte é um planeta do sistema solar.",
+    "item_model": "001 - RESPOSTA UNICA"
+  },
+  {
+    "statement": "Complete a frase: A água ferve a ___ graus Celsius.",
+    "category": "Múltipla escolha",
+    "alternatives": [
+      "90",
+      "100",
+      "110",
+      "120",
+      "130"
+    ],
+    "correct_alternative": 1,
+    "answer_comment": "A água ferve a 100 graus Celsius ao nível do mar.",
+    "item_model": "002 - AFIRMAÇÃO INCOMPLETA"
+  },
+  {
+    "statement": "Explique os principais impactos da Revolução Industrial na sociedade.",
+    "category": "Discursiva",
+    "alternatives": null,
+    "correct_alternative": null,
+    "answer_comment": "A Revolução Industrial trouxe grandes mudanças econômicas, sociais e tecnológicas...",
+    "item_model": "005 - DISCURSIVA"
+  },
+  {
+    "statement": "Descreva o processo de fotossíntese nas plantas.",
+    "category": "Discursiva",
+    "alternatives": null,
+    "correct_alternative": null,
+    "answer_comment": "A fotossíntese é o processo pelo qual as plantas convertem luz em energia química...",
+    "item_model": "005 - DISCURSIVA"
+  }
+]

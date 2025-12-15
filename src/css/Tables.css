@@ -1,0 +1,64 @@
+/* Tables.css */
+
+.question-list-container {
+  padding-left: 35px;  /* espaço da esquerda */
+  /*padding-right: 20px; /* espaço da direita */
+  /* ou use margin se preferir */
+  /* margin-left: 20px;
+     margin-right: 20px; */
+}
+
+.custom-table {
+  border: 1px solid #1f6feb;
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.custom-table thead {
+  background-color: #1f6feb;
+  color: #f9f9f9;
+}
+
+.custom-table th, .custom-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-table th {
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+}
+
+.custom-table tbody tr {
+  background-color: #f9f9f9;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #d9e8ff;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+.custom-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: white;
+}

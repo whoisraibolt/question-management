@@ -1,0 +1,66 @@
+[
+  {
+    "statement": "Defina o conceito de DMZ em redes computacionais e explique de que forma essa arquitetura contribui para o fortalecimento da segurança da infraestrutura interna.",
+    "category": "Discursiva",
+    "alternatives": null,
+    "correct_alternative": null,
+    "answer_comment": "Uma DMZ (Demilitarized Zone) é um segmento de rede isolado que abriga serviços expostos externamente, como servidores web, DNS ou e-mail, mantendo-os separados da rede interna. Sua importância reside em adicionar uma camada intermediária de proteção: mesmo que um serviço na DMZ seja comprometido, o atacante não obtém acesso direto à rede interna, reduzindo o risco de movimentação lateral e limitando o impacto de incidentes.\n\nA resposta foi estruturada para destacar a função da DMZ sem detalhamentos operacionais desnecessários, preservando clareza e objetividade adequadas a avaliações técnicas.",
+    "item_model": "005 - DISCURSIVA"
+  },
+  {
+    "statement": "Não repúdio é a garantia de que:",
+    "category": "Múltipla escolha",
+    "alternatives": [
+      "O autor de uma informação não poderá negar falsamente a autoria de tal informação.",
+      "O sistema vai se comportar segundo o esperado e projetado.",
+      "Os ativos serão protegidos com exatidão e completeza.",
+      "A informação não esteja disponível para pessoas, entidades ou processos não autorizados.",
+      "As veracidades do emissor e do receptor de informações trocadas sejam asseguradas."
+    ],
+    "correct_alternative": 0,
+    "answer_comment": "O princípio de não repúdio assegura que uma parte envolvida em uma comunicação não possa negar posteriormente ter realizado uma ação, como enviar uma mensagem ou assinar digitalmente um documento. Normalmente é implementado por meio de assinaturas digitais e registros auditáveis, garantindo responsabilização e integridade jurídica das transações.\n\nAs demais alternativas se referem a outros princípios de segurança:\n\n(b) confiabilidade ou confiabilidade operacional\n\n(c) integridade\n\n(d) confidencialidade\n\n(e) autenticação.",
+    "item_model": "002 - AFIRMAÇÃO INCOMPLETA"
+  },
+  {
+    "statement": "A Criptografia assimétrica utiliza:",
+    "category": "Múltipla escolha",
+    "alternatives": [
+      "Uma chave pública para cifrar e uma chave privada para decifrar.",
+      "A mesma chave para cifrar e decifrar.",
+      "Uma chave privada para cifrar e uma chave pública para decifrar.",
+      "Uma chave privada para cifrar e uma chave privada para decifrar.",
+      "Uma chave pública para cifrar e uma chave pública para decifrar."
+    ],
+    "correct_alternative": 0,
+    "answer_comment": "A criptografia assimétrica, também chamada de criptografia de chave pública, utiliza um par de chaves matematicamente relacionadas:\n\nChave pública: distribuída livremente, usada tipicamente para cifrar dados ou para verificar assinaturas digitais.\n\nChave privada: mantida em segredo, usada para decifrar dados cifrados com a chave pública ou para assinar digitalmente mensagens.\n\nAs demais alternativas não refletem o modelo de dois pares complementares característico da criptografia assimétrica.",
+    "item_model": "002 - AFIRMAÇÃO INCOMPLETA"
+  },
+  {
+    "statement": "Em uma das reuniões iniciais para a definição da Política de Segurança da Informação de uma empresa, os participantes estão discutindo afirmativas que foram feitas.\n\nI - A política deve, sempre que possível, indicar alguma forma de punição para aqueles que a desrespeitarem ou, do contrário, ela simplesmente será ignorada. Por exemplo, as punições previstas para o não-cumprimento da política devem respeitar as leis de contrato de trabalho da organização, como a CLT, que prevê desde simples advertências até o desligamento por justa causa.\n\nII - As pessoas, como ativos de informação, também possuem vulnerabilidades, entre as quais não conhecer as normas, não saber os limites, não saber o que é confidencial ou não, entre muitas outras. A política deve endereçar esse tipo de vulnerabilidade, diminuindo o risco de que ameaças consigam explorar as vulnerabilidades das pessoas.\n\nIII - A política regula o comportamento sobre o uso da informação em diversos níveis e meios. Sempre que for aplicável, ela deve apontar o responsável pela informação e a forma correta de uso, podendo estabelecer, por exemplo, que o sistema de correio eletrônico deve ser utilizado exclusivamente para fins profissionais relacionados com a empresa em questão.\n\nIV - A classificação dos ativos de informação é uma etapa importante no processo de garantia de segurança da informação. Classificar envolve, por exemplo, inventariar, definir o grau de relevância e identificar esses ativos de informação. Esse processo, além de estruturar e permitir uma gestão mais eficiente dos ativos, contribui significativamente para a análise e tratamento de riscos de segurança da informação.\n\nCom base nos aspectos relacionados à Política de Segurança da Informação em uma empresa estão corretos apenas os conjuntos de afirmativas:",
+    "category": "Múltipla escolha",
+    "alternatives": [
+      "I, II, III e IV.",
+      "I e III, apenas.",
+      "II e III, apenas.",
+      "I, II e IV, apenas.",
+      "II, III e IV, apenas."
+    ],
+    "correct_alternative": 4,
+    "answer_comment": "Justificativa resumida e formal:\n\nAfirmativa I — Incorreta.\nUma Política de Segurança da Informação não deve definir punições. A política estabelece diretrizes, princípios e orientações. Sanções disciplinares pertencem a documentos jurídicos ou normativos complementares (como código de conduta, regulamento interno, normas trabalhistas). A política pode mencionar a existência de consequências, mas não deve detalhar ou prescrever punições.\n\nAfirmativa II — Correta.\nPessoas são ativos de informação e possuem vulnerabilidades (desconhecimento, comportamento inseguro etc.). A política deve orientar e reduzir esses riscos, estabelecendo responsabilidades e boas práticas.\n\nAfirmativa III — Correta.\nA política regulamenta o uso adequado da informação e dos recursos organizacionais, indicando responsáveis e limites de uso (ex.: e-mail para fins profissionais).\n\nAfirmativa IV — Correta.\nA classificação de ativos é parte central da gestão de segurança e fundamenta a análise e o tratamento de riscos.",
+    "item_model": "003 - RESPOSTA MÚLTIPLA"
+  },
+  {
+    "statement": "Dentre as ações abaixo, qual pode ser considerada como a melhor prática ao se implementar controles focados no ataque web conhecido como \"path traversal\"?",
+    "category": "Múltipla escolha",
+    "alternatives": [
+      "Sanitizar utilizando blacklist de padrões proibidos, como ../ e ..\\.",
+      "Restringir as extensões buscadas às extensões exclusivamente esperadas.",
+      "Implementar firewall do tipo WAF para tratar a tentativa de ataque em nível de aplicação.",
+      "Correlacionar logs e tratar como um incidente a ser tratado automaticamente via SOAR.",
+      "Declarar no application server um formato de string permitido para entrada, assumindo que isso impediria manipulação de caminhos."
+    ],
+    "correct_alternative": null,
+    "answer_comment": "Trabalhar com paths canônicos e normalização, de forma que o caminho solicitado não possa escapar do diretório pretendido.\n\nPath canônico é a forma absoluta, normalizada e única de um caminho de arquivo, obtida após resolver diretórios relativos, redundâncias, codificações e links simbólicos.\nPath canônico (ou canonical path) é a versão real, absoluta e única de um caminho de arquivo após o sistema operacional resolver:\n. (diretório atual)\n.. (diretório pai)\nbarras redundantes (////)\nsymlinks (links simbólicos)\nencodings e normalizações",
+    "item_model": "001 - RESPOSTA UNICA"
+  }
+]
