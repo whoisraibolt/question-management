@@ -28,8 +28,8 @@ Este sistema foi desenvolvido como uma ferramenta auxiliar para uso exclusivo no
 
 ## 📝 To-Do
 
-- Implementar a geração das provas com as alternativas embaralhadas para garantir maior aleatoriedade nas respostas
-- Estruturar o JSON de exportação das provas conforme o formato exigido pelo modelo RAG e LLMs, garantindo compatibilidade e eficiência no processamento
+- Implementar a geração das provas com as alternativas embaralhadas para garantir maior aleatoriedade nas respostas.
+- Estruturar o JSON de exportação das provas conforme o formato exigido pelo modelo RAG e LLMs, garantindo compatibilidade e eficiência no processamento. (FEITO)
 
 ## 🔒 Licença
 

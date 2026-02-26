@@ -67,7 +67,7 @@ const QuestionForm = ({ questionId, onSave, onClose }) => {
         ? `Alternativa ${data.correct_alternative + 1}`
         : "Alternativa 1";
 
-      const modeloCodigo = data.modelo_item?.split(" - ")[0] || "001";
+      const modeloCodigo = data.item_model?.split(" - ")[0] || "001";
 
       setFormData({
         enunciado: data.statement || "",
@@ -169,7 +169,7 @@ const QuestionForm = ({ questionId, onSave, onClose }) => {
         alternatives: alternatives,
         correct_alternative: correctAlternative,
         answer_comment: formData.respostaComentada?.trim() || null,
-        modelo_item: modeloItemFull,
+        item_model: modeloItemFull,
       };
 
       let result;

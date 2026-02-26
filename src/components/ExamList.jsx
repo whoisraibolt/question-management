@@ -81,11 +81,40 @@ const ExamList = () => {
   const getSortIndicator = (key) =>
     sortConfig.key === key ? (sortConfig.direction === "asc" ? " ▲" : " ▼") : "";
 
-  const exportJSON = (exam) => {
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exam));
+  // Função auxiliar para buscar questões completas
+  const fetchQuestions = async (questionIds) => {
+    const { data, error } = await supabase
+      .from("questions")
+      .select("*")
+      .in("id", questionIds);
+    if (error) {
+      console.error("Erro ao buscar questões:", error.message);
+      return [];
+    }
+    return data || [];
+  };
+
+  const exportJSON = async (exam, includeAnswerKey = false) => {
+    // Buscar as questões completas
+    const questions = await fetchQuestions(exam.questions);
+
+    // Preparar o objeto de exportação
+    const exportData = {
+      ...exam,
+      questions: questions.map((q) => ({
+        id: q.id,
+        statement: q.statement,
+        category: q.category,
+        alternatives: q.alternatives,
+        item_model: q.item_model,
+        ...(includeAnswerKey ? { correct_alternative: q.correct_alternative, answer_comment: q.answer_comment } : {}),
+      })),
+    };
+
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportData, null, 2));
     const dlAnchorElem = document.createElement("a");
     dlAnchorElem.setAttribute("href", dataStr);
-    dlAnchorElem.setAttribute("download", `${exam.title || "prova"}.json`);
+    dlAnchorElem.setAttribute("download", `${exam.title || "prova"}${includeAnswerKey ? "_gabarito" : ""}.json`);
     dlAnchorElem.click();
   };
 
@@ -120,9 +149,16 @@ const ExamList = () => {
                   <Button
                     className="custom-btn-primary"
                     size="sm"
-                    onClick={() => exportJSON(exam)}
+                    onClick={() => exportJSON(exam, false)}
                   >
-                    Exportar JSON
+                    Exportar Prova
+                  </Button>
+                  <Button
+                    variant="outline-primary"
+                    size="sm"
+                    onClick={() => exportJSON(exam, true)}
+                  >
+                    Exportar Gabarito
                   </Button>
                   <Button
                     variant="danger"
